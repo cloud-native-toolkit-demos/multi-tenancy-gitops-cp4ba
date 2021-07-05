@@ -81,12 +81,6 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - 'integration.ibm.com'
-    resources:
-      - platformnavigators
-  - verbs:
-      - '*'
-    apiGroups:
       - 'operators.coreos.com'
     resources:
       - subscriptions
@@ -201,8 +195,37 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - appconnect.ibm.com
+      - icp4a.ibm.com
     resources:
-      - integrationservers
-      - dashboards
-      - configurations
+      - '*'
+  - apiGroups:
+      - extensions
+    resources:
+      - podsecuritypolicies
+    verbs:
+      - "*"
+  - apiGroups:
+      - policy
+    resources:
+      - podsecuritypolicies
+    verbs:
+      - "*"    
+# for one-click to send operand request to ibm-common-services
+  - apiGroups:
+      - operator.ibm.com
+    resources:
+      - operandrequests
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  - apiGroups:
+      - operator.ibm.com
+    resources:
+      - operandrequests/status
+    verbs:
+      - get      
