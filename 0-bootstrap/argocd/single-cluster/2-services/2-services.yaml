@@ -10,6 +10,8 @@ spec:
   # Do not change the below repository URL
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
   destinations:
+  - namespace: cp4a
+    server: https://kubernetes.default.svc
   - namespace: tools
     server: https://kubernetes.default.svc
   - namespace: redhat-operators
