@@ -17,6 +17,8 @@ resources:
 - argocd/operators/ibm-automation-foundation-core-operator.yaml
 # PVC required for Cloud Pak for Business Automation Operator
 - argocd/instances/cp4a-operator-pvc.yaml
+# IBM Entitlement Key for Cloud Pak for Business Automation Operator
+- argocd/instances/shared-secrets.yaml
 
 # IBM Foundations / Common Services
 #- argocd/operators/ibm-foundations.yaml
