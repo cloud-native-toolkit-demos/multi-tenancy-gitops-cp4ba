@@ -15,6 +15,8 @@ resources:
 # IBM Software - Cloud Pak for Business Automation
 - argocd/operators/ibm-cp4a-operator.yaml
 - argocd/operators/ibm-automation-foundation-core-operator.yaml
+# PVC required for Cloud Pak for Business Automation Operator
+- argocd/instances/cp4a-operator-pvc.yaml
 
 # IBM Foundations / Common Services
 #- argocd/operators/ibm-foundations.yaml
