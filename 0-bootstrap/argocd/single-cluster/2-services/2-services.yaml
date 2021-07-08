@@ -10,7 +10,7 @@ spec:
   # Do not change the below repository URL
   - https://github.com/cloud-native-toolkit/multi-tenancy-gitops-services.git
   destinations:
-  - namespace: cp4a
+  - namespace: cloudpak
     server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc
