@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         serviceaccount:
-          argocd_application_controller: argocd-cluster-argocd-application-controller
+          argocd_application_controller: openshift-gitops-argocd-application-controller
         spec:
           shared_configuration:
             sc_deployment_hostname_suffix: cloudpak.gitops2-cp4ba-6ccd7f378ae819553d37d5f2ee142bd6-0000.sjc03.containers.appdomain.cloud
