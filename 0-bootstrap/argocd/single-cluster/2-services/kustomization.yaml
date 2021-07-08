@@ -13,8 +13,8 @@ resources:
 #- argocd/instances/ibm-platform-navigator-instance.yaml
 
 # IBM Software - Cloud Pak for Business Automation
-#- argocd/operators/ibm-cp4a-operator.yaml
-#- argocd/operators/ibm-automation-foundation-core-operator.yaml
+- argocd/operators/ibm-cp4a-operator.yaml
+- argocd/operators/ibm-automation-foundation-core-operator.yaml
 #- argocd/instances/cp4a-cluster-instance.yaml
 
 # Pre-req for Cloud Pak for Business Automation Operator
@@ -24,7 +24,7 @@ resources:
 - argocd/instances/shared-secrets.yaml
 
 # IBM Foundations / Common Services
-#- argocd/operators/ibm-foundations.yaml
+- argocd/operators/ibm-foundations.yaml
 
 # IBM Catalogs
 - argocd/operators/ibm-catalogs.yaml
