@@ -1,7 +1,7 @@
 resources:
 - argocd/consolelink.yaml
 - argocd/consolenotification.yaml
-- argocd/namespace-cp4a.yaml
+- argocd/namespace-cloudpak.yaml
 # - argocd/namespace-ci.yaml
 # - argocd/namespace-dev.yaml
 # - argocd/namespace-staging.yaml
@@ -14,7 +14,7 @@ resources:
 #- argocd/operator-ocs.yaml
 #- argocd/refarch-infraconfig.yaml
 #- argocd/refarch-machinesets.yaml
-- argocd/storageclass-cloudpak.yaml
+- argocd/storageclass-cp4a.yaml
 
 
 
