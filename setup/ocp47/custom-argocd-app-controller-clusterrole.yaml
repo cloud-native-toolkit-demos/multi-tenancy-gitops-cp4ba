@@ -198,6 +198,12 @@ rules:
       - icp4a.ibm.com
     resources:
       - '*'
+  - verbs:
+      - '*'
+    apiGroups:
+      - 'integration.ibm.com'
+    resources:
+      - platformnavigators      
   - apiGroups:
       - extensions
     resources:
